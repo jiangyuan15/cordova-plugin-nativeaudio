@@ -40,6 +40,15 @@ public class NativeAudioAssetComplex implements OnPreparedListener, OnCompletion
 		mp.setVolume(volume, volume);
 		mp.prepare();
 	}
+	public int getDuration() throws IOException
+	{
+	return mp.getDuration();	
+	}
+	
+	public int getCurrentTime() throws IOException
+	{
+	return mp.getCurrentPosition();	
+	}
 	
 	public void play(Callable<Void> completeCb) throws IOException
 	{

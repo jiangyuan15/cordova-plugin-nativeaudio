@@ -38,6 +38,9 @@ exports.mute = function(ismute, success, fail) {
     if(typeof success === 'function') success();
 };
 
+
+
+
 exports.loop = function(id, success, fail) {
     var res = __res_cache[ id ];
     if(typeof res === 'object') {

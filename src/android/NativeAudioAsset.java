@@ -40,7 +40,18 @@ public class NativeAudioAsset
 		playIndex++;
 		playIndex = playIndex % voices.size();
 	}
-
+	public int getDuration() throws IOException
+	{
+		NativeAudioAssetComplex voice = voices.get(playIndex);
+		return voice.getDuration();
+	}
+	
+	public int getCurrentTime() throws IOException
+	{
+		NativeAudioAssetComplex voice = voices.get(playIndex);
+		return voice.getCurrentTime();
+	}
+	
 	public boolean pause()
 	{
 		boolean wasPlaying = false;

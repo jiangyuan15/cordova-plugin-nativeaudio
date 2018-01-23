@@ -44,6 +44,18 @@ module.exports  = {
         return cordova.exec(successCallback, errorCallback, "NativeAudio", "play", [id]);
         
     },
+    pause: function(id, successCallback, errorCallback) {
+        return cordova.exec(successCallback, errorCallback, "NativeAudio", "pause", [id]);
+    },    	
+    resume: function(id, successCallback, errorCallback) {
+        return cordova.exec(successCallback, errorCallback, "NativeAudio", "resume", [id]);
+    },
+    getCurrentTime: function(id, successCallback, errorCallback) {
+        return cordova.exec(successCallback, errorCallback, "NativeAudio", "getCurrentTime", [id]);
+    },    	
+    getDuration: function(id, successCallback, errorCallback) {
+        return cordova.exec(successCallback, errorCallback, "NativeAudio", "getDuration", [id]);
+    },
 
     stop: function(id, successCallback, errorCallback) {
         return cordova.exec(successCallback, errorCallback, "NativeAudio", "stop", [id]);
