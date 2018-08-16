@@ -219,7 +219,6 @@ public class NativeAudio extends CordovaPlugin implements AudioManager.OnAudioFo
 		} catch (JSONException e) {
 			return new PluginResult(Status.ERROR, e.toString());
 		} catch (IOException e) {
-			// TODO 自动生成的 catch 块
 			return new PluginResult(Status.ERROR, e.toString());
 		}
 		
@@ -243,7 +242,6 @@ public class NativeAudio extends CordovaPlugin implements AudioManager.OnAudioFo
 		} catch (JSONException e) {
 			return new PluginResult(Status.ERROR, e.toString());
 		} catch (IOException e) {
-			// TODO 自动生成的 catch 块
 			return new PluginResult(Status.ERROR, e.toString());
 		}
 
